@@ -27,10 +27,11 @@ public class CalcolaBiglietto { // £ al km=0.21, 20% in meno a >18, 40% in - a <
 		//double prezzoTotalebiglitto = costoBigliettoAlKm *
 		
 		if(età < 18) {
-		   System.out.println("Cost del biglietto: " + (costoBigliettoAlKm - (costoBigliettoAlKm * sconto18))+ " euro");
+		   System.out.println("Costo del biglietto: " + (costoBigliettoAlKm - (costoBigliettoAlKm * sconto18))+ " euro");
 		} else if(età > 65) {
-			System.out.println("Cost del biglietto: " + (costoBigliettoAlKm - (costoBigliettoAlKm * sconto65))+ " euro");
-		}
+			System.out.println("Costo del biglietto: " + (costoBigliettoAlKm - (costoBigliettoAlKm * sconto65))+ " euro");
+		} else if(età >= 18 && età > 64)
+			System.out.println("costo del biglietto: " + costoBigliettoAlKm + " euro");
 		
 		
 		
